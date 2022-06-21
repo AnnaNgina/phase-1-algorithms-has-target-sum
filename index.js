@@ -1,6 +1,14 @@
 function hasTargetSum(array, target) {
+
+  for(i=0; i<array.length; i++){
+    let comp = array.splice(0, 1); 
+    if(array.includes(target-comp)){
+      debugger;
+      return true
+    }
+  }return false}
   // Write your algorithm here
-}
+
 
 /* 
   Write the Big O time complexity of your function here
